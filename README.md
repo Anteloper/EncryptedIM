@@ -1,5 +1,5 @@
 #EncryptedIM
-An encrypted IM program that uses AES in CBC mode with MAC's using SHA-256.
+An command line instant messenger that uses AES in CBC mode with MAC's using SHA-256.
 
 ###Setup and run:
 
