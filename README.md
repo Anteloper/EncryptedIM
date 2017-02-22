@@ -1,9 +1,14 @@
 #EncryptedIM
-Takes three command line arguments
-	1. [-s] or [-c IPADDRESS]
-	2. [--confkey SOMEKEY]
-	3. [--authkey SOMEKEY]
 
+Takes three command line arguments<br /><br />
+⋅⋅⋅[-s] or [-c IPADDRESS\]  where -s is the server that is started first, and -c is the client that is started after the server.<br />⋅⋅⋅IPADDRESS can be the address of the server or its network name⋅⋅<br /><br />
+⋅⋅⋅[--confkey SOMEKEY\] where SOMEKEY is the agreed upon confidentiality key⋅⋅ <br /><br />
+⋅⋅⋅[--authkey SOMEKEY\] where SOMEKEY is the agreed upon authenticity key⋅⋅ <br /><br />
+
+Example setup and run:
+```pip install pycrypto <br />
+   python chat.py -s --confkey SECRETKEY1 --authkey SECRETKEY2
+   python chat.py -c localhost --confkey SECRETKEY1 --authkey SECRETKEY2
 
 Once a connection between the sockets is made, 
 the first party to send a message automatically first sends a randomly generated IV in the clear. 
