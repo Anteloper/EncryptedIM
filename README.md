@@ -1,9 +1,9 @@
 #EncryptedIM
 
 Takes three command line arguments<br /><br />
-⋅⋅⋅[-s] or [-c IPADDRESS\]  where -s is the server that is started first, and -c is the client that is started after the server.<br />⋅⋅⋅IPADDRESS can be the address of the server or its network name⋅⋅<br /><br />
-⋅⋅⋅[--confkey SOMEKEY\] where SOMEKEY is the agreed upon confidentiality key⋅⋅ <br /><br />
-⋅⋅⋅[--authkey SOMEKEY\] where SOMEKEY is the agreed upon authenticity key⋅⋅ <br /><br />
+[-s] or [-c IPADDRESS\]  where -s is the server that is started first, and -c is the client that is started after the server. IPADDRESS can be the address of the server or its network name<br /><br />
+[--confkey SOMEKEY\] where SOMEKEY is the agreed upon confidentiality key<br /><br />
+[--authkey SOMEKEY\] where SOMEKEY is the agreed upon authenticity key <br /><br />
 
 Example setup and run:
 ```pip install pycrypto <br />
