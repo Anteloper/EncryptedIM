@@ -3,7 +3,6 @@ An encrypted IM program that uses AES in CBC mode with MAC's using SHA-256.
 
 ###Setup and run:
 
-####Example run:
 ```
 pip install pycrypto 
 
