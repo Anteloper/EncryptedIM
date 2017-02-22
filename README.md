@@ -2,6 +2,15 @@
 An encrypted IM program that uses AES in CBC mode with MAC's using SHA-256.
 
 ###Setup and run:
+
+####Example run:
+```
+pip install pycrypto 
+
+python chat.py -s --confkey SECRETKEY1 --authkey SECRETKEY2
+python chat.py -c localhost --confkey SECRETKEY1 --authkey SECRETKEY2
+```
+
 Takes Three Command Line Arguments<br />
 
 #####[-s] or [-c IPADDRESS\]  <br />
@@ -11,13 +20,6 @@ where SOMEKEY is the agreed upon confidentiality key<br />
 #####[--authkey SOMEKEY\]
 where SOMEKEY is the agreed upon authenticity key <br /><br />
 
-####Example run:
-```
-pip install pycrypto 
-
-python chat.py -s --confkey SECRETKEY1 --authkey SECRETKEY2
-python chat.py -c localhost --confkey SECRETKEY1 --authkey SECRETKEY2
-```
 
 ###Methodology
 Once a connection between the sockets is made, the first party to send a message automatically first sends a randomly generated IV in the clear. <br />
