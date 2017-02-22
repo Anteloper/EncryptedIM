@@ -11,8 +11,6 @@ python chat.py -s --confkey SECRETKEY1 --authkey SECRETKEY2
 python chat.py -c localhost --confkey SECRETKEY1 --authkey SECRETKEY2
 ```
 
-Takes Three Command Line Arguments<br />
-
 #####[-s] or [-c IPADDRESS\]  <br />
 where -s is the server that is started first, and -c is the client that is started after the server. IPADDRESS can be the address of the server or its network name<br />
 #####[--confkey SOMEKEY\] <br />
